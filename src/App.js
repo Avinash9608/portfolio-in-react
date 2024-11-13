@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header"; // Import Header
+import Footer from "./components/Footer"; // Import Footer
+import Body from "./components/Body"; // Import Body
+import About from "./components/About"; // Import About page (example)
+import Skills from "./components/Skills"; // Import Skills page (example)
+import Projects from "./components/Projects"; // Import Projects page (example)
+import Contact from "./components/Contact"; // Import Contact page (example)
+// import ContactForm from "./components/Contact-form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Body />} /> {/* Main route */}
+        <Route path="/about" element={<About />} /> {/* About page */}
+        <Route path="/skills" element={<Skills />} /> {/* Skills page */}
+        <Route path="/projects" element={<Projects />} /> {/* Projects page */}
+        <Route path="/contact" element={<Contact />} /> {/* Contact page */}
+        {/* <Route path="/contact-form" element={<ContactForm />} />{" "} */}
+        {/* Contact page */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

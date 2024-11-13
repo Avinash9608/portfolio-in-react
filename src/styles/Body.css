@@ -1,0 +1,65 @@
+/* Body.css */
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 62vh;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b06b6b;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.hello-text {
+  font-size: 24px;
+  color: #c17979;
+}
+
+.name-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #746868;
+}
+
+.typing-intro {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  overflow: hidden; /* Ensures text doesn't overflow as it types */
+  white-space: nowrap; /* Keeps text in a single line */
+  border-right: 3px solid #555; /* Blinking caret */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,104 @@
+.skills {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.skills-category {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills-category h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
+.skills-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-category ul li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  animation: slideIn 1s ease-out;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.skills-category p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  animation: slideIn 1s ease-out;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.skills-category.programming-languages h3 {
+  color: #f39c12;
+}
+
+.skills-category.core-competencies h3 {
+  color: #00bcd4;
+}
+
+.skills-category.databases h3 {
+  color: #9b59b6;
+}
+
+.skills-category.tools-platforms h3 {
+  color: #2ecc71;
+}
+
+.skills-category.git-github-aws h3 {
+  color: #3498db;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.typing-skills {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}

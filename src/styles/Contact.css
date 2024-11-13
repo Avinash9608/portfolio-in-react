@@ -1,0 +1,97 @@
+/* Contact.css */
+
+/* Cover Page Effect */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: url("path-to-your-background-image.jpg") no-repeat center center */
+  /* fixed; */
+  background-size: cover;
+  padding: 40px;
+  min-height: 100vh;
+  color: white;
+  background-color: #c3bfbf;
+}
+
+.contact-info {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Social Links Container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Social Link Styling */
+.social-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Icon Styling */
+.social-icon {
+  font-size: 28px;
+  margin-right: 10px;
+  color: #ffffff; /* White color for icons */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Text Styling */
+.social-text {
+  color: #fff; /* White color for text */
+}
+
+/* Hover Effects */
+.social-link:hover .social-icon {
+  color: #0073b1; /* LinkedIn color on hover */
+}
+
+.social-link:hover .social-text {
+  color: #0073b1; /* LinkedIn color on hover */
+}
+
+.social-link:nth-child(2):hover .social-icon {
+  color: #e4405f; /* Instagram color on hover */
+}
+
+.social-link:nth-child(2):hover .social-text {
+  color: #e4405f; /* Instagram color on hover */
+}
+
+.social-link:nth-child(3):hover .social-icon {
+  color: #1da1f2; /* Twitter color on hover */
+}
+
+.social-link:nth-child(3):hover .social-text {
+  color: #1da1f2; /* Twitter color on hover */
+}
+
+.social-link:nth-child(4):hover .social-icon {
+  color: #d44638; /* Email color on hover */
+}
+
+.social-link:nth-child(4):hover .social-text {
+  color: #d44638; /* Email color on hover */
+}

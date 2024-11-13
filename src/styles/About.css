@@ -1,0 +1,98 @@
+/* General About Section Styling */
+.about {
+  padding: 130px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Roadmap Styling */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.roadmap-point {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-point:hover {
+  transform: scale(1.05); /* Slight scaling when hovered */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adding shadow effect on hover */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4caf50; /* Green Circle */
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.roadmap-details {
+  padding-left: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  opacity: 0;
+  transform: translateX(-50px); /* Initial position off-screen */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.roadmap-point:hover .roadmap-details {
+  opacity: 1; /* Make visible when hovered */
+  transform: translateX(0); /* Slide in */
+}
+
+.roadmap-details h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.roadmap-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Circle Colors for Different Points */
+.roadmap-point:first-child .circle {
+  background-color: #ff9800; /* Orange Circle for first point */
+}
+
+.roadmap-point:nth-child(2) .circle {
+  background-color: #2196f3; /* Blue Circle for second point */
+}
+
+.roadmap-point:nth-child(3) .circle {
+  background-color: #9c27b0; /* Purple Circle for third point */
+}
+
+/* Hover Effect for Circle */
+.roadmap-point:hover .circle {
+  background-color: #4caf50; /* Green Circle on hover */
+}

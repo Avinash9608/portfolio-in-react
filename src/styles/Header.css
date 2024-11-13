@@ -1,0 +1,97 @@
+/* styles/Header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #5d5959;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #5d5959;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #151412;
+  font-size: 20px;
+  transform: scale(1.1);
+}
+
+.header-name:hover {
+  color: #151412;
+  transform: scale(1.1);
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Same as profile image background color */
+}
+
+.profile-container {
+  margin-right: 40px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text styling */
+.hello-text {
+  color: #ff6347; /* Custom color */
+  font-size: 20px;
+  margin: 0;
+}
+
+.name-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Typing animation */
+.typing-intro {
+  font-size: 18px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333;
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Typing and blink caret animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}

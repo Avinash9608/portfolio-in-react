@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles/App.css */
+body {
+  background-color: #5ea260; /* Set your preferred color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: Add some padding or style for main content */
+#root {
+  padding: 20px;
+}

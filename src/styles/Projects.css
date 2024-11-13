@@ -1,0 +1,102 @@
+/* General Styling */
+.projects {
+  padding: 140px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Allow the cards to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 40px; /* Space between cards */
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Project Card Styling */
+.project-card {
+  width: 280px; /* Fixed width for each card */
+  height: 380px; /* Fixed height for each card */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 30px;
+  opacity: 1; /* Ensure the card is always visible */
+  transform: translateY(50px);
+  animation: fadeInUp 0.6s forwards;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensures the image fits the container */
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.project-card a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #0056b3;
+}
+
+/* Animation for Project Cards */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Animation Effects */
+.project-card:hover {
+  transform: translateY(-15px); /* Lift the card further */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+  background-color: #f0f0f0; /* Change background on hover */
+  animation: scaleUp 0.3s ease-in-out forwards; /* Add scale effect */
+  opacity: 1; /* Keep the card visible */
+}
+
+/* Scale Animation on Hover */
+@keyframes scaleUp {
+  0% {
+    transform: translateY(-15px) scale(1);
+  }
+  100% {
+    transform: translateY(-15px) scale(1.05); /* Slightly increase the size */
+  }
+}
+
+/* Ensure that the cards are spaced well on mobile screens */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Cards take up more space on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
