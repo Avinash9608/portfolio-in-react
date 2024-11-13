@@ -36,7 +36,7 @@ function Contact() {
             <FaTwitter className="social-icon" />{" "}
             <span className="social-text">Twitter</span>
           </a>
-          <a href="avinash25di@gmail.com" className="social-link">
+          <a href={`mailto:avinash25di@gmail.com`} className="social-link">
             <FaEnvelope className="social-icon" />{" "}
             <span className="social-text">Email</span>
           </a>
