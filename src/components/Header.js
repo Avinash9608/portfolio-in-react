@@ -22,9 +22,6 @@ function Header() {
         <Link to="/contact" className="nav-link">
           Contact
         </Link>
-        {/* <Link to="/contact-form" className="nav-link">
-          Contact-form
-        </Link> */}
       </nav>
     </header>
   );
