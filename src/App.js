@@ -8,6 +8,7 @@ import About from "./components/About"; // Import About page (example)
 import Skills from "./components/Skills"; // Import Skills page (example)
 import Projects from "./components/Projects"; // Import Projects page (example)
 import Contact from "./components/Contact"; // Import Contact page (example)
+import JourneyRoadmap from "./components/JourneyRoadmap";
 // import ContactForm from "./components/Contact-form";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/skills" element={<Skills />} /> {/* Skills page */}
         <Route path="/projects" element={<Projects />} /> {/* Projects page */}
         <Route path="/contact" element={<Contact />} /> {/* Contact page */}
+        <Route path="/journeyRoadmap" element={<JourneyRoadmap />} />
       </Routes>
       <Footer />
     </Router>

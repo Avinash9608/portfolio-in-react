@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: -5px 20px;
   background-color: rgba(0, 0, 0, 0.2);
   color: #5d5959;
   z-index: 1000;
@@ -22,13 +22,13 @@
 }
 
 .nav-link:hover {
-  color: #151412;
+  color: #a9a397;
   font-size: 20px;
   transform: scale(1.1);
 }
 
 .header-name:hover {
-  color: #151412;
+  color: #edab39;
   transform: scale(1.1);
 }
 
@@ -94,4 +94,53 @@
   50% {
     border-color: transparent;
   }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-name {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  background-color: rgba(245, 73, 144);
+  width: 550px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
 }
